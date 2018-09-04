@@ -14,6 +14,7 @@ Your configuration may vary depending on how your cronjobs are already configure
 In my environment, my Apache server is running as the www-data user. The base directory for my Kanboard installation is /var/www/html/kanboard
 
 Therefore, I have added the following line to the crontab file for the www-data user and added the following line:
+
 0 1 * * * cd /var/www/html/kanboard && ./cli trigger:tasks >/dev/null 2>&1
 
 This ensures that all task related triggers are processed every day at 1:00am.
