@@ -63,7 +63,7 @@ class TaskMoveOnDueDate extends Base
     }
 
     /**
-     * Execute the action (change the task color)
+     * Execute the action (change the task column)
      *
      * @access public
      * @param  array   $data   Event data dictionary
@@ -74,7 +74,7 @@ class TaskMoveOnDueDate extends Base
         $results = array();
 
         foreach ($data['tasks'] as $task) {
-            if ($task['date_due'] <= time() && $task['date_due'] > 0 && $task['color_id'] != $this->getParam('color_id')) {
+            if ($task['date_due'] <= time() && $task['date_due'] > 0) {
                 $values = array(
                     'id'       => $task['id'],
                     'column_id' => $this->getParam('column_id'),
