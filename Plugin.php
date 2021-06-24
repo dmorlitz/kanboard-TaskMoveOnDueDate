@@ -15,7 +15,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Automatically move a task to a specific column on the date');
+        return t('(Superceded by v1.2.10) Automatically move a task to a specific column on the date');
     }
 
     public function getPluginAuthor()

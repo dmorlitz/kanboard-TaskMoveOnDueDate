@@ -21,7 +21,7 @@ class TaskMoveOnDueDate extends Base
      */
     public function getDescription()
     {
-        return t('Automatically move a task when due date is passed');
+        return t('(superseded by v1.2.10) Automatically move a task when due date is passed');
     }
 
     /**
